@@ -44,7 +44,7 @@ Your solver should be able to handle negative numbers in the operations:
 
 - `equation="2*-3" // -6`
 
-Your solver should be able to compute exponetials: x to the power of y:
+Your solver should be able to compute exponentials which is a number raised to the power of another number: 2 to the power of 3 gives 8.
 
 - `2^3 = 8`
 - `2^-1 = 0.5`
