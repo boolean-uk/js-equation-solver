@@ -45,8 +45,8 @@ Your solver should be able to handle negative numbers in the operations:
 
 Your solver should be able to compute exponetials: x to the power of y:
 
--`2^3 = 8`
--`2^-1 = 0.5`
+- `2^3 = 8`
+- `2^-1 = 0.5`
 
 ## Part 3: nested equations - supporting brackets
 
