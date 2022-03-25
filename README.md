@@ -23,13 +23,14 @@ It should respect the correct order of operations (multiplications and divisions
 
 It should be able to solve any length of equation, without limits on how many numbers/operations should be in the string. Examples: short equations `3+5` or longer ones like `6-7*5/8+4-3/8+16*129`
 
-It should return a number if the equation has just a number and no operations.
+It should return a number if the equation has just a number and no operations: `solver.solve('18')` should return the number `18`.
 
-It should return an error / throw an error if the equation cannot be solved.
+It should return an error / throw an error if the equation cannot be solved. Here are some error conditions to implement:
 
 - the equation is empty
-- the equation just has operation symbols
+- the equation just has operation symbols and no numbers `+-`
 - two operation symbols appear next to each other such as `*/`, but not if the operation is a `+` or `-` which indicates the sign of a number eg: `3*-2` should be valid, giving a result of `-6` (see Part 2)
+- the equation contains characters/symbols that cannot be parsed `y+x`, for example.
 
 ## Part 2: supporting decimal numbers, negative numbers and exponentials
 
