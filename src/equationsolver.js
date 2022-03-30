@@ -20,7 +20,7 @@ class EquationSolver {
       '-': (c, a) => a - c,
       '^': (c, a) => Math.pow(a, c),
     }
-    this.OPERATOR_REGEX = /((^-|(?<=[-+/^*]))-?)?(\.?\d)+|[-*+^/]/g;
+    this.OPERATOR_REGEX = /((^-|(?<=[-(+/*]))-?)?(\.?\d)+|[-*^+/]/g;
     this.GROUP_REGEX = /\([^()]+\)/g;
   }
 
