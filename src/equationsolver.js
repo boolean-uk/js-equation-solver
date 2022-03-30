@@ -2,7 +2,7 @@ class EquationSolver {
 /**
  * This class solves simple math equations.
  * it does NOT use PEMDAS ! 
- * It doesn't use eval() or anything like that.
+ * It doesn't use eval() or anything like that. 
  */
   constructor() {
     this.operations = {
