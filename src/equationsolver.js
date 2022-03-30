@@ -3,6 +3,14 @@ class EquationSolver {
  * This class solves simple math equations.
  * it does NOT use PEMDAS ! 
  * It doesn't use eval() or anything like that. 
+ * This code is an extension of the solution I had for a CodeWars kata.
+ * URL : https://www.codewars.com/kata/5b05a8dd91cc5739df0000aa
+ * 
+ * Part of this could be refactored to use proper variables declarations (calculate method)
+ * instead of using params to store data. But I thought it would be nice to see that it is possible to
+ * shorten the code but still make it readable. 
+ * 
+ * This isn't the best solution but is the shortest one.
  */
   constructor() {
     this.operations = {
@@ -37,6 +45,7 @@ class EquationSolver {
    * Reduces the given equation to a simples equations.
    * Removing parenthesis and grouping operations using REGEX.
    * 10+(2*3) => ["10+", "2*3"] => 10+6 => 16
+   * 10+6 (Simplest form of the full operation) will be calculated on the return of the function. 
    */
   solve(equation) {
     while (equation.includes('(') || equation.includes(')'))
