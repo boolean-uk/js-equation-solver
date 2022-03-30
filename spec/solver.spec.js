@@ -43,6 +43,15 @@ describe('EquationSolver', () => {
     expect(result).toEqual(expected)
   })
 
+  it('should parse and detect exponetial operations', () => {
+    // setup
+    const expected = 16
+    // execute
+    const result = solver.solve("4^2")
+    // verify
+    expect(result).toEqual(expected)
+  })
+
   it('should parse and detect multiple operations', () => {
     // setup
     const expected = 20
@@ -57,6 +66,15 @@ describe('EquationSolver', () => {
     const expected = 45
     // execute
     const result = solver.solve("2+3*(4+5)")
+    // verify
+    expect(result).toEqual(expected)
+  })
+
+  it('should handle decimal values', () => {
+    // setup
+    const expected = 1.2
+    // execute
+    const result = solver.solve(".2+1")
     // verify
     expect(result).toEqual(expected)
   })
